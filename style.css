@@ -7,15 +7,39 @@ input[type=number] {
   transform: scale(0.8);
 }
 
+input[type=button] {
+  background-color: skyblue;
+  display: flex;
+  margin: 10px auto;
+}
+
+input:hover {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: blue;
 }
 
-input[type=button] {
-  background-color: goldenrod;
+p {
+  font-size: 70%;
 }
 
-input:hover{
-  cursor: pointer;
+.mb {
+  margin-bottom: 30px;
+}
+
+.container {
+  width: max-content;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2vw;
+  background-color: springgreen;
 }
