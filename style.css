@@ -7,14 +7,17 @@ input[type=number] {
   transform: scale(0.8);
 }
 
-input[type=button] {
+input[type=button], input[type=reset] {
   background-color: skyblue;
-  display: flex;
-  margin: 10px auto;
 }
 
 input:hover {
   cursor: pointer;
+}
+
+.button {
+  margin: 10px auto;
+  width: max-content;
 }
 
 a {
@@ -22,7 +25,7 @@ a {
   color: blue;
 }
 
-p {
+.lead {
   font-size: 70%;
 }
 
@@ -40,6 +43,6 @@ h1 {
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 4vw;
   background-color: springgreen;
 }
