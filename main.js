@@ -18,10 +18,10 @@ function calc2() {
 //目標金額から売値を計算する
 function calc3() {
   var tanka3 = document.getElementById("tanka3").value;
-  var buyAmount = document.getElementById("buyAmount").value;
+  var sellAmount = document.getElementById("sellAmount").value;
   var targetAmount = document.getElementById("targetAmount").value;
 
-  var ans1 = Number(targetAmount) + (Number(tanka3) * Number(buyAmount));
-  var ans2 = Number(ans1) / Number(buyAmount);
+  var ans1 = Number(targetAmount) + (Number(tanka3) * Number(sellAmount));
+  var ans2 = Number(ans1) / Number(sellAmount);
   document.getElementById("result_area3").innerHTML = ans2 + "円で売りましょう。";
 }
