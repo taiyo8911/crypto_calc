@@ -5,64 +5,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ビットコイン計算ツール</title>
+  <title>ビットコイン利益計算ツール</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
 
-    <h1><a href="">ビットコイン計算ツール</a></h1>
-    <p>ビットコインや仮想通貨などいろいろな計算ができるツールです。</p>
-    <p>夢を見ましょう！ドリーム！</p>
+    <h1><a href="">利益計算ツール</a></h1>
+    <div class="lead">株やビットコインなどの利益率を計算するツールです。<br>夢を見ましょう！ドリーム！</div>
     <hr>
 
     <h2 id="hyouka">「何％値上がりしたか」計算</h2>
-    <div>
-      <span>現在の単価</span>
-      <input type="number" id="nowprice" />円
-    </div>
-    <div>
-      <span>買った時の単価</span>
-      <input type="number" id="tanka">円
-    </div>
-    <input type="button" value="計算" onclick="calc1()" />
+    <form>
+      <div>現在の単価: <input type="number" id="nowprice">円</div>
+      <div>買った時の単価: <input type="number" id="tanka">円</div>
+      <div class="button">
+        <input type="button" value="  計算  " onclick="calc1()">
+        <input type="reset" value="  消去  ">
+      </div>
+    </form>
     <div class="mb" id="result_area"></div>
-    <hr />
+    <hr>
 
     <h2 id="urine1">「いくらで売ればいいか」計算</h2>
-    <div>
-      <span>買った時の単価</span>
-      <input type="number" id="tanka2">円
-    </div>
-
-    <div>
-      <span>目標の値上がり率</span>
-      <input type="number" id="profitRate" />%
-    </div>
-    <input type="button" value="計算" onclick="calc2()" />
+    <form>
+      <div>買った時の単価: <input type="number" id="tanka2">円</div>
+      <div>目標とする値上がり率: <input type="number" id="profitRate">％</div>
+      <div class="button">
+        <input type="button" value="  計算  " onclick="calc2()">
+        <input type="reset" value="  消去  ">
+      </div>
+    </form>
     <div class="mb" id="result_area2"></div>
     <hr>
 
     <h2 id="urine2">「いくらで売ればいいか」計算</h2>
-    <div>
-      <span>買った時の単価</span>
-      <input type="number" id="tanka3">円
-    </div>
-
-    <div>
-      <span>売る数量</span>
-      <input type="number" id="buyAmount">枚
-    </div>
-
-    <div>
-      <span>目標の金額</span>
-      <input type="number" id="targetAmount" />円
-    </div>
-    <input type="button" value="計算" onclick="calc3()" />
+    <form>
+      <div>目標の金額: <input type="number" id="targetAmount">円</div>
+      <div>売る数量: <input type="number" id="sellAmount"></div>
+      <div>買った時の単価: <input type="number" id="tanka3">円</div>
+      <div class="button">
+        <input type="button" value="  計算  " onclick="calc3()">
+        <input type="reset" value="  消去  ">
+      </div>
+    </form>
     <div class="mb" id="result_area3"></div>
     <hr>
-
+    <a href="">トップへ</a>
   </div>
 
   <script src="main.js"></script>
