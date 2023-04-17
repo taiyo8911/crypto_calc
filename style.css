@@ -7,17 +7,20 @@ input[type=number] {
   transform: scale(0.8);
 }
 
-input[type=button], input[type=reset] {
+input[type=button],
+input[type=reset] {
   background-color: skyblue;
 }
 
-input:hover {
+input:hover,
+button:hover {
   cursor: pointer;
 }
 
 .button {
   margin: 10px auto;
-  width: max-content;
+  display: flex;
+  gap: 10px;
 }
 
 a {
@@ -34,7 +37,7 @@ a {
 }
 
 .container {
-  width: max-content;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -43,6 +46,8 @@ h1 {
 }
 
 h2 {
-  font-size: 4vw;
   background-color: springgreen;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 100%;
 }
